@@ -24,8 +24,6 @@ class PixivCli < Formula
     end
   end
 
-  conflicts_with "pixiv-cli-beta", because: "both install the pixiv command"
-
   def install
     bin.install "pixiv"
   end
