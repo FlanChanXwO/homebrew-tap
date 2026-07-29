@@ -1,26 +1,26 @@
 class PixivCli < Formula
   desc "Pixiv command-line client and MCP server"
   homepage "https://github.com/FlanChanXwO/pixiv-cli"
-  version "0.7.2"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v0.7.2/pixiv-cli_0.7.2_darwin_arm64.tar.gz"
-      sha256 "96805d2c2b435292acef6a7c7f911103b72b4efea6eccaaeb5cdaa90d0cec0f1"
+      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v0.8.0/pixiv-cli_0.8.0_darwin_arm64.tar.gz"
+      sha256 "570304ae6b873a41954a675a3f9e537a78657c4742a405b55ade4ac08ea56608"
     else
-      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v0.7.2/pixiv-cli_0.7.2_darwin_amd64.tar.gz"
-      sha256 "2b30ead9146528bdecb397290c0ad1789cc814803237289d08b696dc861e7412"
+      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v0.8.0/pixiv-cli_0.8.0_darwin_amd64.tar.gz"
+      sha256 "5076c5bb75c922c9ee1e079a4dcaa2ad190fbab4f452e2ba963148d7d19a1907"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v0.7.2/pixiv-cli_0.7.2_linux_arm64.tar.gz"
-      sha256 "750accf4e424f6bcf87c5d759610ebcf24711dd89d85b2cbeb06dac23b2ab71b"
+      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v0.8.0/pixiv-cli_0.8.0_linux_arm64.tar.gz"
+      sha256 "bb1b5c63dbd9a5f18a126f12674be6f66c38f2d454113aaf2e26303ee4a462e4"
     else
-      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v0.7.2/pixiv-cli_0.7.2_linux_amd64.tar.gz"
-      sha256 "7901c02ad66e6eb65ec11bbe22af0f09ee07c979d3498a94b643f79dc9b87948"
+      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v0.8.0/pixiv-cli_0.8.0_linux_amd64.tar.gz"
+      sha256 "70bfdc9a5ff40d393c537c4ffe6758af0354987aa1655645daa176a3e0d1a6b8"
     end
   end
 
@@ -28,6 +28,12 @@ class PixivCli < Formula
 
   def install
     bin.install "pixiv"
+  end
+
+  def post_install
+    # The hidden command reports integration failures without invalidating the
+    # verified Homebrew installation; a normal browser login retries it.
+    system bin/"pixiv", "auth", "_install-handler"
   end
 
   test do
