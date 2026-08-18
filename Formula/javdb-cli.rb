@@ -7,20 +7,20 @@ class JavdbCli < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/FlanChanXwO/javdb-cli/releases/download/v0.7.2/javdb-cli_0.7.2_darwin_arm64.tar.gz"
-      sha256 "e8e775ac2503e85f144b1a003999c6bad4e282b5b6515f0bc756a793a66fcb98"
+      sha256 "a3d500b5e2137880b4e61d4ac8475bbc78abdd8a041ef082de5a0da143b1114d"
     else
       url "https://github.com/FlanChanXwO/javdb-cli/releases/download/v0.7.2/javdb-cli_0.7.2_darwin_amd64.tar.gz"
-      sha256 "67aab35819854bb69573734778fb7c338ffad59d93efc70300d35fb11211d3e3"
+      sha256 "45d257c4f64236c3a4cbc440b1dc2e56c9b462340e114654df7db5f9710a99c7"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/FlanChanXwO/javdb-cli/releases/download/v0.7.2/javdb-cli_0.7.2_linux_arm64.tar.gz"
-      sha256 "69982e847e061b37f84e9d22da741b8a7203c7fab7a152af0ed3bdaa807a1cca"
+      sha256 "11fcb7187a780178b8273775de18d7d33b9c79e145e900a2e176c7c09a74484a"
     else
       url "https://github.com/FlanChanXwO/javdb-cli/releases/download/v0.7.2/javdb-cli_0.7.2_linux_amd64.tar.gz"
-      sha256 "678bc1f1d07aaaf92d47d0241b050b580d5eb985f0e58f4477ae37b7e94724aa"
+      sha256 "598bfc535db39e9696885bbba5cd93fa19783517fdec7dadd100691a4e3ea141"
     end
   end
 
