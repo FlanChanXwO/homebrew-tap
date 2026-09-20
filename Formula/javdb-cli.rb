@@ -1,26 +1,26 @@
 class JavdbCli < Formula
   desc "Unofficial JavDB app API command-line client"
   homepage "https://github.com/FlanChanXwO/javdb-cli"
-  version "0.7.3"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FlanChanXwO/javdb-cli/releases/download/v0.7.3/javdb-cli_0.7.3_darwin_arm64.tar.gz"
-      sha256 "6b108b92b7aa222311d0389546f98944233b66f0ba7832624ed3848f98e30b7a"
+      url "https://github.com/FlanChanXwO/javdb-cli/releases/download/v0.8.0/javdb-cli_0.8.0_darwin_arm64.tar.gz"
+      sha256 "f1689c10f587a9b80de1956aeaf05145a7110a16eae6802531ea0c5129c10630"
     else
-      url "https://github.com/FlanChanXwO/javdb-cli/releases/download/v0.7.3/javdb-cli_0.7.3_darwin_amd64.tar.gz"
-      sha256 "e2a53833323f94b527c3e4cfe79c8146e33de23746dc2f7d128288688b3751d4"
+      url "https://github.com/FlanChanXwO/javdb-cli/releases/download/v0.8.0/javdb-cli_0.8.0_darwin_amd64.tar.gz"
+      sha256 "4b7519b52314716b638c2b62d0541a678e7ba5316614e13d05d3ecae03f02fbe"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/FlanChanXwO/javdb-cli/releases/download/v0.7.3/javdb-cli_0.7.3_linux_arm64.tar.gz"
-      sha256 "26d51061fb75dbb1ab7ff904f454e438e5aab3249fda3bc556df7062d6ba8d47"
+      url "https://github.com/FlanChanXwO/javdb-cli/releases/download/v0.8.0/javdb-cli_0.8.0_linux_arm64.tar.gz"
+      sha256 "50e85e0274f5fb9c85e33e18da17dbcda05cc58278a0836fc592a77b78ac3b54"
     else
-      url "https://github.com/FlanChanXwO/javdb-cli/releases/download/v0.7.3/javdb-cli_0.7.3_linux_amd64.tar.gz"
-      sha256 "061afe11e171e4a3d98756406d426684e3ea152723082b09a0efd782f434736b"
+      url "https://github.com/FlanChanXwO/javdb-cli/releases/download/v0.8.0/javdb-cli_0.8.0_linux_amd64.tar.gz"
+      sha256 "89929071af336cc793ee5692b7efe342e7842c2f765652b0fef0e856f21be4ef"
     end
   end
 
