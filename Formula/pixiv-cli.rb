@@ -1,26 +1,26 @@
 class PixivCli < Formula
   desc "Pixiv command-line client and MCP server"
   homepage "https://github.com/FlanChanXwO/pixiv-cli"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v1.3.0/pixiv-cli_1.3.0_darwin_arm64.tar.gz"
-      sha256 "bbcb4371a7f58a2df57f6d2f60c7b22589651e0f6ab182bad9c914032624cc9e"
+      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v1.4.0/pixiv-cli_1.4.0_darwin_arm64.tar.gz"
+      sha256 "720b984627446930479063acac34641d62bb92920df1722049007817e415bdb1"
     else
-      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v1.3.0/pixiv-cli_1.3.0_darwin_amd64.tar.gz"
-      sha256 "d268a3454eb4b6c56c010e9169685ad09204acc50bc2287f76a06ac4d1c31f9d"
+      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v1.4.0/pixiv-cli_1.4.0_darwin_amd64.tar.gz"
+      sha256 "4231e1fb9d3d1c7758bd0e4d927c208c91069b0ff3c9252978af9d05c20ad368"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v1.3.0/pixiv-cli_1.3.0_linux_arm64.tar.gz"
-      sha256 "c2308566a43edce23238792a75a33aff31709eedb96401e5f42e6497b6dcfcb2"
+      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v1.4.0/pixiv-cli_1.4.0_linux_arm64.tar.gz"
+      sha256 "17335115e1a511179092f733f7d4f6263ed35486bc5a050bd69439044fe79c08"
     else
-      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v1.3.0/pixiv-cli_1.3.0_linux_amd64.tar.gz"
-      sha256 "271f231afff59f8392ee20f460d868d67eb2a3a87563d44ee2bddd082a8457e7"
+      url "https://github.com/FlanChanXwO/pixiv-cli/releases/download/v1.4.0/pixiv-cli_1.4.0_linux_amd64.tar.gz"
+      sha256 "b5c671538d14cc7e93d86da6c088f836ac8deb4aac20fd436ff72fe71fbc187e"
     end
   end
 
